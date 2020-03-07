@@ -25,4 +25,11 @@ public class BookServiceImpl implements BookService {
 		return bookRepository.findAll();
 	}
 
+
+	@Override
+	public Book saveBook(Book book) {
+		// TODO Auto-generated method stub
+		return bookRepository.save(book);
+	}
+
 }

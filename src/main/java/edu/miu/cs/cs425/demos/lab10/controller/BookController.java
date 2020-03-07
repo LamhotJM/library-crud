@@ -40,6 +40,14 @@ public class BookController {
 
 	}
 	
+	@GetMapping(value="/book/new")
+	public String displayAddNewBookForm(Model model)
+	{
+		model.addAttribute("book", new Book());
+	
+		return "book/new";
+	}
+	
 //	public String listbook2(Model model)
 //	{
 //		List<Book> books = bookService.getBooks();
